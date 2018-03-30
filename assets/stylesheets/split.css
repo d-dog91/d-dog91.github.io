@@ -1,0 +1,503 @@
+/*
+Template Name: Split
+Author: One Page Love
+Author URI: https://onepagelove.com
+Template URI: https://onepagelove.com/split
+Description: Split is a centrally-divided layout for a professional online presence with a big image or video left with alongside content.
+*/
+/* -- CSS Reset -- */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
+@import url("https://fonts.googleapis.com/css?family=Lora");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -moz-font-feature-settings: "liga" on;
+  margin: 0;
+}
+
+img.alignright {
+  float: right;
+}
+
+img.alignleft {
+  float: left;
+}
+
+img.aligncenter {
+  clear: both;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+body {
+  background-color: #FFFFFF;
+  border-style: none;
+}
+
+body,
+p,
+a,
+a:hover {
+  color: #000000;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  border: none;
+  border-style: none;
+  box-shadow: none;
+}
+
+/* -- Content -- */
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+html {
+  background-color: #6a6a6a;
+}
+
+body.page-template-page-fullsingle-split {
+  background-color: #6a6a6a;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 33px;
+  letter-spacing: -0.2px;
+  color: #ffffff;
+  animation: fadein 2s;
+}
+
+.fs-split {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+@media (max-width: 800px) {
+  .fs-split {
+    height: auto;
+    flex-wrap: wrap;
+  }
+}
+
+.fs-split .split-image {
+  width: 60%;
+  height: 100vh;
+  background-image: url("../../images/background.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+@media (max-width: 800px) {
+  .fs-split .split-image {
+    height: 80vh;
+    width: 100%;
+  }
+}
+
+.fs-split .split-content {
+  width: 40%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+@media (max-width: 800px) {
+  .fs-split .split-content {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.fs-split .split-content .split-content-vertically-center {
+  padding: 80px;
+  max-width: 640px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+@media (max-width: 1200px) {
+  .fs-split .split-content .split-content-vertically-center {
+    padding: 60px;
+  }
+}
+
+@media (max-width: 800px) {
+  .fs-split .split-content .split-content-vertically-center {
+    padding: 40px;
+  }
+}
+
+.split-intro {
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 80px;
+  letter-spacing: -2px;
+}
+
+.split-intro h1 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 40px;
+  letter-spacing: 0.4px;
+  color: #fccd25;
+}
+
+.split-intro .tagline {
+  font-size: 70px;
+  line-height: 70px;
+  color: #ffffff;
+}
+
+.split-bio {
+  padding: 25px 0 40px 0;
+  font-family: 'Lora', serif;
+}
+
+@media (max-width: 1200px) {
+  .split-bio {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .split-bio {
+    padding: 20px 0;
+  }
+}
+
+.split-bio p {
+  color: #ffffff;
+}
+
+.split-bio a {
+  color: #ffffff;
+  transition-duration: 0.5s;
+  border-bottom: 1px dotted #ffffff;
+}
+
+.split-bio a:hover {
+  color: #fccd25;
+  transition-duration: 0.1s;
+  border-bottom: 1px dotted #fccd25;
+}
+
+.split-lists .split-list {
+  width: 30%;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 500px) {
+  .split-lists .split-list {
+    width: 90%;
+  }
+}
+
+.split-lists .split-list h3 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 11px;
+  margin-bottom: 31px;
+  color: #ffffff;
+  letter-spacing: 2px;
+  opacity: 0.5;
+}
+
+.split-lists .split-list ul li {
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 12px;
+}
+
+.split-lists .split-list ul li a {
+  color: #ffffff;
+  transition-duration: 0.5s;
+}
+
+.split-lists .split-list ul li a:hover {
+  color: #fccd25;
+  transition-duration: 0.1s;
+}
+
+.split-extra p {
+  font-size: 12px;
+  line-height: 14px;
+  color: #fccd25;
+}
+
+.split-credit {
+  opacity: 0.5;
+}
+
+.split-credit p {
+  color: #1e1e1e;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.split-credit p a {
+  color: #1e1e1e;
+}
+
+.split-video {
+  overflow: hidden;
+  position: relative;
+}
+
+.video-wrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  height: 56.25vw;
+  width: 100vw;
+}
+
+@media (max-aspect-ratio: 16 / 9) {
+  .video-container {
+    height: 100vh;
+    width: 177.7777777778vh;
+  }
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+video.video {
+  object-fit: cover;
+  object-position: 50% 50%;
+  width: 100%;
+  height: 100%;
+}
+
+/* -- AddEvent --*/
+/*hello*/
+.addeventatc {
+  width: 170px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  z-index: 999998;
+  background: #1e1e1e;
+  cursor: pointer;
+  font-family: Roboto,"Segoe UI",Frutiger,"Frutiger Linotype","Dejavu Sans","Helvetica Neue",Arial,sans-serif;
+  color: #ffffff !important;
+  font-size: 15px;
+  font-weight: 300;
+  text-decoration: none;
+  padding: 5px 20px 5px 5px;
+}
+
+.addeventatc:hover {
+  color: #1e1e1e;
+  font-size: 15px;
+  text-decoration: none;
+  background-color: #373737;
+}
+
+.addeventatc:active {
+  top: 1px;
+}
+
+.addeventatc .arrow {
+  width: 15px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -5px;
+  background: url(../../addtocalendar_gfx/icon-arrow-t1.png) no-repeat;
+}
+
+.addeventatc-selected {
+  background-color: #373737;
+}
+
+.addeventatc .start, .addeventatc .end, .addeventatc .timezone, .addeventatc .title, .addeventatc .description, .addeventatc .location, .addeventatc .organizer, .addeventatc .organizer_email, .addeventatc .facebook_event, .addeventatc .all_day_event, .addeventatc .date_format, .addeventatc .alarm_reminder, .addeventatc .recurring, .addeventatc .attendees, .addeventatc .calname, .addeventatc .uid, .addeventatc .status, .addeventatc .method, .addeventatc .client {
+  display: none !important;
+}
+
+.addeventatc_dropdown {
+  width: 215px;
+  position: absolute;
+  z-index: 99999;
+  padding: 6px 0px 0px 0px;
+  background: #fff;
+  text-align: left;
+  display: none;
+  margin-top: 2px;
+  margin-left: -1px;
+  border-top: 1px solid #c8c8c8;
+  border-right: 1px solid #bebebe;
+  border-bottom: 1px solid #a8a8a8;
+  border-left: 1px solid #bebebe;
+  -webkit-box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.addeventatc_dropdown span {
+  display: block;
+  line-height: 100%;
+  background: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  color: #333;
+  padding: 9px 10px 9px 40px;
+}
+
+.addeventatc_dropdown span:hover {
+  background-color: #f4f4f4;
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.addeventatc_dropdown em {
+  color: #999 !important;
+  font-size: 12px !important;
+}
+
+.addeventatc_dropdown .frs {
+  background: #fff;
+  color: #cacaca !important;
+  cursor: pointer;
+  font-size: 9px !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  line-height: 110% !important;
+  padding-left: 10px;
+  position: absolute;
+  right: 10px;
+  text-align: right;
+  text-decoration: none;
+  top: 5px;
+  z-index: 101;
+}
+
+.addeventatc_dropdown .frs:hover {
+  color: #999 !important;
+}
+
+.addeventatc_dropdown .ateappleical {
+  background: url(../../addtocalendar_gfx/icon-apple-t1.svg) 13px 50% no-repeat;
+  background-size: 14px auto;
+}
+
+.addeventatc_dropdown .ategoogle {
+  background: url(../../addtocalendar_gfx/icon-google-t1.svg) 13px 50% no-repeat;
+  background-size: 16px auto;
+}
+
+.addeventatc_dropdown .ateoutlook {
+  background: url(../../addtocalendar_gfx/icon-outlook-t1.svg) 12px 50% no-repeat;
+  background-size: 16px auto;
+}
+
+.addeventatc_dropdown .ateoutlookcom {
+  background: url(../../addtocalendar_gfx/icon-outlook-t1.svg) 12px 50% no-repeat;
+  background-size: 16px auto;
+}
+
+.addeventatc_dropdown .ateyahoo {
+  background: url(../../addtocalendar_gfx/icon-yahoo-t1.svg) 12px 50% no-repeat;
+  background-size: 16px auto;
+}
+
+.addeventatc_dropdown .atefacebook {
+  background: url(../../addtocalendar_gfx/icon-facebook-t1.svg) 13px 50% no-repeat;
+  background-size: 14px auto;
+}
+
+.addeventatc_dropdown .copyx {
+  height: 21px;
+  display: block;
+  position: relative;
+  cursor: default;
+}
+
+.addeventatc_dropdown .brx {
+  height: 1px;
+  overflow: hidden;
+  background: #e0e0e0;
+  position: absolute;
+  z-index: 100;
+  left: 10px;
+  right: 10px;
+  top: 9px;
+}
