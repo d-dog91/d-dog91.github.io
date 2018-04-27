@@ -1,0 +1,154 @@
+
+//-------------------------------------------------------------------------------
+// Variables
+//-------------------------------------------------------------------------------
+
+// Colors
+$button-normal 	: #1a1a1a;
+$button-hover    : #333333;
+
+//-------------------------------------------------------------------------------
+// The button
+//-------------------------------------------------------------------------------
+
+.addeventatc {
+  width: 185px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  z-index: 999998;
+  background: $button-normal;
+  cursor: pointer;
+  font-family: Roboto,"Segoe UI",Frutiger,"Frutiger Linotype","Dejavu Sans","Helvetica Neue",Arial,sans-serif;
+  color: #fff !important;
+  font-size: 15px;
+  font-weight: 300;
+  text-decoration: none;
+  padding: 5px 15px 5px 5px;
+  &:hover {
+    color: #fff;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: $button-hover;
+  }
+  &:active {
+    top: 1px;
+  }
+  .arrow {
+    width: 15px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -5px;
+    background: url(../addtocalendar_gfx/icon-arrow-t1.png) no-repeat;
+  }
+}
+
+.addeventatc-selected {
+  background-color: $button-hover;
+}
+
+.addeventatc {
+  .start, .end, .timezone, .title, .description, .location, .organizer, .organizer_email, .facebook_event, .all_day_event, .date_format, .alarm_reminder, .recurring, .attendees, .calname, .uid, .status, .method, .client {
+    display: none !important;
+  }
+}
+
+//-------------------------------------------------------------------------------
+// The dropdown
+//-------------------------------------------------------------------------------
+
+
+.addeventatc_dropdown {
+  width: 204px;
+  position: absolute;
+  z-index: 99999;
+  padding: 6px 0px 0px 0px;
+  background: #fff;
+  text-align: left;
+  display: none;
+  margin-top: 2px;
+  margin-left: -1px;
+  border-top: 1px solid #c8c8c8;
+  border-right: 1px solid #bebebe;
+  border-bottom: 1px solid #a8a8a8;
+  border-left: 1px solid #bebebe;
+  -webkit-box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.15);
+  box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.15);
+  span {
+    display: block;
+    line-height: 100%;
+    background: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    color: #333;
+    padding: 9px 10px 9px 40px;
+    &:hover {
+      background-color: #f4f4f4;
+      color: #000;
+      text-decoration: none;
+      font-size: 14px;
+    }
+  }
+  em {
+    color: #999 !important;
+    font-size: 12px !important;
+  }
+  .frs {
+    background: #fff;
+    color: #cacaca !important;
+    cursor: pointer;
+    font-size: 9px !important;
+    font-style: normal !important;
+    font-weight: normal !important;
+    line-height: 110% !important;
+    padding-left: 10px;
+    position: absolute;
+    right: 10px;
+    text-align: right;
+    text-decoration: none;
+    top: 5px;
+    z-index: 101;
+    &:hover {
+      color: #999 !important;
+    }
+  }
+  .ateappleical {
+    background: url(../addtocalendar_gfx/icon-apple-t1.svg) 13px 50% no-repeat;
+    background-size: 14px auto;
+  }
+  .ategoogle {
+    background: url(../addtocalendar_gfx/icon-google-t1.svg) 13px 50% no-repeat;
+    background-size: 16px auto;
+  }
+  .ateoutlook, .ateoutlookcom {
+    background: url(../addtocalendar_gfx/icon-outlook-t1.svg) 12px 50% no-repeat;
+    background-size: 16px auto;
+  }
+  .ateyahoo {
+    background: url(../addtocalendar_gfx/icon-yahoo-t1.svg) 12px 50% no-repeat;
+    background-size: 16px auto;
+  }
+  .atefacebook {
+    background: url(../addtocalendar_gfx/icon-facebook-t1.svg) 13px 50% no-repeat;
+    background-size: 14px auto;
+  }
+  .copyx {
+    height: 21px;
+    display: block;
+    position: relative;
+    cursor: default;
+  }
+  .brx {
+    height: 1px;
+    overflow: hidden;
+    background: #e0e0e0;
+    position: absolute;
+    z-index: 100;
+    left: 10px;
+    right: 10px;
+    top: 9px;
+  }
+}
