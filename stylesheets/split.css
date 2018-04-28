@@ -143,6 +143,7 @@ body.page-template-page-fullsingle-split {
 .fs-split .split-image {
   width: 60%;
   height: 100vh;
+  z-index: 1;
   background-image: url("../images/background.jpg");
   background-position: center center;
   background-size: cover;
@@ -150,8 +151,22 @@ body.page-template-page-fullsingle-split {
 
 @media (max-width: 800px) {
   .fs-split .split-image {
-    height: 80vh;
     width: 100%;
+    height: 90vh;
+  }
+}
+
+.fs-split .split-text-overlay {
+  position: absolute;
+  width: 60%;
+  height: 100vh;
+  z-index: 2;
+}
+
+@media (max-width: 800px) {
+  .fs-split .split-text-overlay {
+    width: 100%;
+    height: 90vh;
   }
 }
 
@@ -345,6 +360,15 @@ video.video {
   object-position: 50% 50%;
   width: 100%;
   height: 100%;
+}
+
+img.text-overlay {
+  position: relative;
+  top: 50%;
+  object-fit: cover;
+  transform: translate3d(5%, -50%, 0);
+  width: 90%;
+  max-height: 100%;
 }
 
 /* -- AddEvent --*/
