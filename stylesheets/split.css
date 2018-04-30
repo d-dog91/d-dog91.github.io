@@ -218,7 +218,7 @@ body.page-template-page-fullsingle-split {
   line-height: 20px;
   margin-bottom: 40px;
   letter-spacing: 0.4px;
-  color: #007849;
+  color: #238734;
 }
 
 .split-intro .tagline {
@@ -255,9 +255,9 @@ body.page-template-page-fullsingle-split {
 }
 
 .split-bio a:hover {
-  color: #007849;
+  color: #238734;
   transition-duration: 0.1s;
-  border-bottom: 1px dotted #007849;
+  border-bottom: 1px dotted #238734;
 }
 
 .split-lists .split-list {
@@ -295,14 +295,14 @@ body.page-template-page-fullsingle-split {
 }
 
 .split-lists .split-list ul li a:hover {
-  color: #007849;
+  color: #238734;
   transition-duration: 0.1s;
 }
 
 .split-extra p {
   font-size: 12px;
   line-height: 14px;
-  color: #007849;
+  color: #238734;
 }
 
 .split-credit {
@@ -363,9 +363,9 @@ video.video {
 }
 
 img.text-overlay {
+  object-fit: cover;
   position: relative;
   top: 50%;
-  object-fit: cover;
   transform: translate3d(5%, -50%, 0);
   width: 90%;
   max-height: 100%;
