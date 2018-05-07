@@ -372,8 +372,14 @@ img.text-overlay {
   top: 50%;
   left: 50%;
   transform: translate3d(-50%, -50%, 0);
-  max-width: 70%;
+  max-width: 65%;
   max-height: 90%;
+}
+
+@media (max-width: 800px) {
+  img.text-overlay {
+    max-width: 90%;
+  }
 }
 
 /* -- AddEvent --*/
