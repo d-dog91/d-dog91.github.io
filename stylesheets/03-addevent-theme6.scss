@@ -4,8 +4,8 @@
 //-------------------------------------------------------------------------------
 
 // Colors
-$button-normal 	: #1a1a1a;
-$button-hover    : #333333;
+$button-normal 	: #238734;
+$button-hover    : #37aa4b;
 
 //-------------------------------------------------------------------------------
 // The button
@@ -21,14 +21,14 @@ $button-hover    : #333333;
   cursor: pointer;
   font-family: Roboto,"Segoe UI",Frutiger,"Frutiger Linotype","Dejavu Sans","Helvetica Neue",Arial,sans-serif;
   color: #fff !important;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 300;
   text-decoration: none;
   padding: 5px 15px 5px 5px;
 
   &:hover {
     color: #fff;
-    font-size: 15px;
+    font-size: 18px;
     text-decoration: none;
     background-color: $button-hover;
   }

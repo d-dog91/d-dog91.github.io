@@ -8,8 +8,12 @@ Description: Split is a centrally-divided layout for a professional online prese
 /* -- CSS Reset -- */
 @import url("https://fonts.googleapis.com/css?family=Oswald");
 @import url("https://fonts.googleapis.com/css?family=EB+Garamond");
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600");
 @import url("https://fonts.googleapis.com/css?family=Lora");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -120,8 +124,8 @@ body.page-template-page-fullsingle-split {
   background-color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 21px;
-  line-height: 33px;
+  font-size: 25px;
+  line-height: 36px;
   letter-spacing: -0.2px;
   color: #1a1a1a;
   animation: fadein 2s;
@@ -224,7 +228,7 @@ body.page-template-page-fullsingle-split {
 .split-intro .tagline {
   font-size: 70px;
   line-height: 70px;
-  color: #007849;
+  color: #238734;
 }
 
 .split-bio {
@@ -366,9 +370,10 @@ img.text-overlay {
   object-fit: cover;
   position: relative;
   top: 50%;
-  transform: translate3d(5%, -50%, 0);
-  width: 90%;
-  max-height: 100%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  max-width: 70%;
+  max-height: 90%;
 }
 
 /* -- AddEvent --*/
@@ -378,11 +383,11 @@ img.text-overlay {
   position: relative;
   text-align: center;
   z-index: 999998;
-  background: #1a1a1a;
+  background: #238734;
   cursor: pointer;
   font-family: Roboto,"Segoe UI",Frutiger,"Frutiger Linotype","Dejavu Sans","Helvetica Neue",Arial,sans-serif;
   color: #fff !important;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 300;
   text-decoration: none;
   padding: 5px 15px 5px 5px;
@@ -390,9 +395,9 @@ img.text-overlay {
 
 .addeventatc:hover {
   color: #fff;
-  font-size: 15px;
+  font-size: 18px;
   text-decoration: none;
-  background-color: #333333;
+  background-color: #37aa4b;
 }
 
 .addeventatc:active {
@@ -410,7 +415,7 @@ img.text-overlay {
 }
 
 .addeventatc-selected {
-  background-color: #333333;
+  background-color: #37aa4b;
 }
 
 .addeventatc .start, .addeventatc .end, .addeventatc .timezone, .addeventatc .title, .addeventatc .description, .addeventatc .location, .addeventatc .organizer, .addeventatc .organizer_email, .addeventatc .facebook_event, .addeventatc .all_day_event, .addeventatc .date_format, .addeventatc .alarm_reminder, .addeventatc .recurring, .addeventatc .attendees, .addeventatc .calname, .addeventatc .uid, .addeventatc .status, .addeventatc .method, .addeventatc .client {
