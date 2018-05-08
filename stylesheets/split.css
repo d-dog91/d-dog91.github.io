@@ -314,6 +314,10 @@ body.page-template-page-fullsingle-split {
   position: relative;
 }
 
+.split-videotext {
+  position: relative;
+}
+
 .video-wrap {
   position: absolute;
   top: 50%;
@@ -346,7 +350,6 @@ body.page-template-page-fullsingle-split {
 }
 
 video.video {
-  position: relative;
   z-index: 1;
   object-fit: cover;
   object-position: 50% 50%;
@@ -355,9 +358,9 @@ video.video {
 }
 
 img.text-overlay {
-  position: relative;
+  position: absolute;
   z-index: 2;
-  top: -50%;
+  top: 50%;
   left: 50%;
   transform: translate3d(-50%, -50%, 0);
   max-width: 65%;
